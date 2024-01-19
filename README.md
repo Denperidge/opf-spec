@@ -9,8 +9,36 @@ date_format: dd/mm/yyyy
 ```
 
 ## 2. Introduction
-### a. Overview
-Currently, music - from the listeners side - is incredibly fragmented. Partly due to convenience and partly due to crackdowns on illegal streaming/downloading, streaming services now have a wider and wider usage. Sharing music and playlists is possible, but only if your friends are on the same music platform. Unless you're willing to deal with oftenly heavy restrictions outlined in [`2.c.i: Context: locked in ecosystem restrictions`](#locked-in-ecosystem-restrictions), from forced account signups to not even being able to specifically select the song you wish to listen to.
+### a. Problem Description
+The experience of sharing music is incredibly fragmented.
+
+#### Services: Local playback & streaming ...
+Back in the early days of digital music, **local playback** was the only way to go. The best you could do to share your favourite music with your friends was links to the artist on the iTunes Store, or sending over ripped CD files.
+
+**Muisic streaming** have since seen wider and wider usage, partly due to convenience and partly due to crackdowns on the illegal streaming and/or downloading of music.
+
+#### ... are both important
+
+But this does not mean that **local playback** should be discarded.
+- There are many reasons for local playback
+    - Music only ever recorded to physical media without a proper release.
+    - Music that has been taken off 
+    This has allowed for things like easy playlist sharing (this will be expanded upon later).
+    - People buying CD's from the artists merch stand or a local music store, but wanting to be able to listen to it on their phones.
+    - People with low internet availability.
+- Additionally, streaming services do not guarantee whether you keep the content you paid for. Articles featuring examples on [netflix.com](https://www.netflix.com/tudum/articles/whats-leaving-netflix), [theverge.com](https://www.theverge.com/2022/7/8/23199861/playstation-store-film-tv-show-removed-austria-germany-studiocanal).
+- Additionally, there are artists that *refuse* to release on specific platforms. An example can be found in the FAQ on the [free99.net website](https://free99.net/faq), stating politically motivated reasons for not releasing on Spotify.
+- Their ecosystems are all locked in. [This will be expanded upon later](#).
+
+But this does not mean that **streaming services** should be discarded:
+- Large install bases.
+- Large playlist communities, even if locked into the platform.
+
+#### "Hey, listen to this song/playlist!"
+Sharing links to music and playlists is possible, but only if you're willing to make sacrifices
+- Ideally, those around you use the **same services** If one or multiple people do not:
+    - Listen on their own serviceThey have to *manually find* the equivalent song(s).
+    - They you're willing to deal with oftenly heavy restrictions outlined in [`2.c.i: Context: locked in ecosystem restrictions`](#locked-in-ecosystem-restrictions), from forced account signups to not even being able to specifically select the song you wish to listen to.
 
 The Open Playlist Format is an attempt to create an al encompassing playlist format. One that is non-proprietary, yet is designed to allow anyone using it to quickly find links to every possible service the user might use, without the drawbacks of some of the currently existing services (see [`2.c.ii: Existing services`](#existing-services)).
 
