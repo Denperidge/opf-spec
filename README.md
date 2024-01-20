@@ -9,22 +9,20 @@ date_format: dd/mm/yyyy
 ```
 
 ## 2. Introduction
-### a. Problem Description
+### 2.a. Problem Description
 The experience of sharing music is incredibly fragmented.
 
-#### Services: Local playback & streaming ...
+#### 2.a.i. Music services: Local playback & streaming ...
 Back in the early days of digital music, **local playback** was the only way to go. The best you could do to share your favourite music with your friends was links to the artist on the iTunes Store, or sending over ripped CD files.
 
-**Music streaming** have since seen wider and wider usage, partly due to convenience and partly due to crackdowns on the illegal streaming and/or downloading of music.
+**Music streaming** has since seen wider and wider usage. Partly partly due to convenience, and partly due to crackdowns on the illegal streaming and/or downloading of music. This has allowed for things like easy playlist sharing (this will be expanded upon later), but also further locked off.
 
-#### ... are both important
-
+#### 2.a.ii. ... are both important
 But this does not mean that **local playback** should be discarded.
-- There are many reasons for local playback
-    - Music only ever recorded to physical media without a proper release.
-    - Music that has been taken off 
-    This has allowed for things like easy playlist sharing (this will be expanded upon later).
-    - People buying CD's from the artists merch stand or a local music store, but wanting to be able to listen to it on their phones.
+- There are many reasons for local playback:
+    - Music that was only ever recorded to physical media without a proper release.
+    - Music that has been taken off music streaming services.
+    - People buying CD's from the artists merch stand or a local music store, wanting to be able to listen to it on their phones.
     - People with low internet availability.
 - Additionally, streaming services do not guarantee whether you keep the content you paid for. Articles featuring examples on [netflix.com](https://www.netflix.com/tudum/articles/whats-leaving-netflix), [theverge.com](https://www.theverge.com/2022/7/8/23199861/playstation-store-film-tv-show-removed-austria-germany-studiocanal).
 - Additionally, there are artists that *refuse* to release on specific platforms. An example can be found in the FAQ on the [free99.net website](https://free99.net/faq), stating politically motivated reasons for not releasing on Spotify.
@@ -34,7 +32,7 @@ But this does not mean that **streaming services** should be discarded:
 - Large install bases.
 - Large playlist communities, even if locked into the platform.
 
-#### "Hey, listen to this song/playlist!"
+#### 2.a.iii. "Hey, listen to this song/playlist!"
 Sharing links to music and playlists is possible, but only if you're willing to make sacrifices:
 - Ideally, those around you use the *same* services...
     - (You could use an external sync platform, with heavy restrictions for non-premium users and subsequent account creation on every platform you may want to link to)
@@ -43,10 +41,10 @@ Sharing links to music and playlists is possible, but only if you're willing to 
     - They have to be willing to deal with *account creations*, *limited quality*, *advertisements*, and sometimes even not being able to *select* the song they want.
 
 
-#### Fix that
-The Open Playlist Format is an attempt to create an all encompassing playlist format. A way of playlist definition that is future-proof; no matter what future artists, songs or services pop up. One that is *non-proprietary*, but can easily be used for services that are.
+#### 2.a.iv. Fix that
+The Open Playlist Format is an attempt to create an all encompassing playlist format. A way of playlist definition that is future-proof; no matter what future artists, songs or services pop up. One that is *non-proprietary*, but can easily be used for services that are. And one that isn't a database, but contains enough data to confidently search a song in one. A format designef to be as unaffected by link rot or future changes as possible.
 
-Use cases can then include services for automatic playlist transferring/syncing, or full on a website where a playlist can be shared and subsequently played/imported to any streaming service.
+Use cases can then include services for automatic playlist transferring/syncing, or a website where a playlist can be shared and subsequently played/imported to any streaming service.
 
 ### b. Glossary
 Some words like `service` are inherently ambiguous, and as such will be clarified here. Words like `song` and `playlist` have preconceived and specific meanings, and as such, a *song or playlist presented in the Open Playlist Format will be written in `ALL CAPS`*. For example: `You can use a PLAYLIST to create a playlist in Spotify`.
