@@ -15,7 +15,7 @@ The experience of sharing music is incredibly fragmented.
 #### Services: Local playback & streaming ...
 Back in the early days of digital music, **local playback** was the only way to go. The best you could do to share your favourite music with your friends was links to the artist on the iTunes Store, or sending over ripped CD files.
 
-**Muisic streaming** have since seen wider and wider usage, partly due to convenience and partly due to crackdowns on the illegal streaming and/or downloading of music.
+**Music streaming** have since seen wider and wider usage, partly due to convenience and partly due to crackdowns on the illegal streaming and/or downloading of music.
 
 #### ... are both important
 
@@ -35,12 +35,16 @@ But this does not mean that **streaming services** should be discarded:
 - Large playlist communities, even if locked into the platform.
 
 #### "Hey, listen to this song/playlist!"
-Sharing links to music and playlists is possible, but only if you're willing to make sacrifices
-- Ideally, those around you use the **same services** If one or multiple people do not:
-    - Listen on their own serviceThey have to *manually find* the equivalent song(s).
-    - They you're willing to deal with oftenly heavy restrictions outlined in [`2.c.i: Context: locked in ecosystem restrictions`](#locked-in-ecosystem-restrictions), from forced account signups to not even being able to specifically select the song you wish to listen to.
+Sharing links to music and playlists is possible, but only if you're willing to make sacrifices:
+- Ideally, those around you use the *same* services...
+    - (You could use an external sync platform, with heavy restrictions for non-premium users and subsequent account creation on every platform you may want to link to)
+- ... But if one or multiple people do *not*:
+    - They have to *manually* find the equivalent song(s) on the platform of their choice, [if it's even there](#are-both-important).
+    - They have to be willing to deal with *account creations*, *limited quality*, *advertisements*, and sometimes even not being able to *select* the song they want.
 
-The Open Playlist Format is an attempt to create an al encompassing playlist format. One that is non-proprietary, yet is designed to allow anyone using it to quickly find links to every possible service the user might use, without the drawbacks of some of the currently existing services (see [`2.c.ii: Existing services`](#existing-services)).
+
+#### Fix that
+The Open Playlist Format is an attempt to create an all encompassing playlist format. A way of playlist definition that is future-proof; no matter what future artists, songs or services pop up. One that is *non-proprietary*, but can easily be used for services that are.
 
 Use cases can then include services for automatic playlist transferring/syncing, or full on a website where a playlist can be shared and subsequently played/imported to any streaming service.
 
@@ -49,20 +53,23 @@ Some words like `service` are inherently ambiguous, and as such will be clarifie
 
 - **Service**: anything that allows for *specific song playback*
     - (+) **Streaming online** (YouTube videos, Deezer music)
-    - (+) **streaming locally** (e.g. Spotify local saves, internal of the app)
+    - (+) **Streaming locally** (e.g. Spotify local saves, internal of the app)
     - (+) **Locally downloaded songs** (e.g. ripped CD's on a file explorer or Bandcamp)
     - (-) Radio stations/devices: out of scope
-- **Most commonly used**, when it is used in this spec, is the most commonly used spelling/term on...
-  - The artists wikipedia and/or website and/or store/streaming pages of a language *not* in the native language of the artist
-  - The artists wikipedia and/or website and/or store/streaming pages *in* the native langauge of the artist
-  - 
+- For determining some variables:
+    - Valid sources of information on an artist is the artists Wikipedia, official website, and services (digital music store/streaming pages). For the Wikipedia and artist websites, it can be a good idea to check it both in a language *not* in the commonly used language of the artist, and one *in* a language not usually used by them
+    - Two methods will frequently pop up:
+        - **Most commonly used**, when it is used in this spec, is the most commonly used spelling/term on...
 
-#### Practical examples
+        TODO finish
 
-**Most commonly used artist name for Fear, and Loathing in Las Vegas ([English wikipedia](https://en.wikipedia.org/wiki/Fear,_and_Loathing_in_Las_Vegas), [Japanese Wikipedia](https://ja.wikipedia.org/wiki/Fear,_and_Loathing_in_Las_Vegas))
-```
-Fear, and Loathing in Las Vegas
-```
+        #### Practical examples
+
+        **Most commonly used artist name for Fear, and Loathing in Las Vegas ([English wikipedia](https://en.wikipedia.org/wiki/Fear,_and_Loathing_in_Las_Vegas), [Japanese Wikipedia](https://ja.wikipedia.org/wiki/Fear,_and_Loathing_in_Las_Vegas))
+        ```
+        Fear, and Loathing in Las Vegas
+        ```
+        - **Most prominently used**, which is the one used in page titles
 
 
 - **SONG**: an object containing all thats needed to
