@@ -85,13 +85,18 @@ The format should be enough to create the following:
 
 
 ### 2.e. Assumptions
+#### A universal code
+As described later ([3.a. Design philosophies](#3a-design-philosophies)), an ISRC lookup will be the first 
 
 ## 3. Solution
 ### 3.a. Design philosophies
 Now, there are a few things that are important:
 - **Compatibility (listener):** this format should be applicable for as many services as possible in the past, present and future. This means no service specific things in the spec.
 - **Compatibility (creator):** With the current state of music, songs should not be identified from what used to be considered standard. Not every song has an International Standard Recording Code. Not every artist has MusicBrainz entries. Base functionality cannot be locked behind anything aside from the most basic things every song has: a set of characters for a title and a set of characters for (a) creator(s).
+    - First, check using the SONGs' ISRC (as of writing, this seems to be the most universal ID)
+    - If that fails, use song name & artist name stored in a SONG
 - **Minimal**: There should be as little as possible hardcoded into an OPF that can change down the line. If a song gets renamed, that's probably just a new song. But songs moving albums is very realistic.
+- **Not a database**. This is a format. A database allows for manual corrections, this does not. But as such, OPF can be designed to not have a single point of failure. If Tidal shuts down, OPF should survive - and ideally, be unaffected by - the fallout.
 
 #### 3.b. Data structure
 #### SONG
@@ -100,7 +105,7 @@ Every SONG is represented as follows
 {
     "isrc": "ISRCODE",
     "song_name": "The title of a song. Used for basic display and/or looking up a missing ISRC, if applicable",
-    "artist_name": "The title of a song. Used for basic display and/or looking up a missing ISRC, if applicable",
+    "artist_name": "The main artist of a song. Used for basic display and/or looking up a missing ISRC, if applicable",
 }
 ```
 
@@ -116,6 +121,19 @@ Every PLAYLIST is represented as follows
     ]
 }
 ```
+
+
+```py
+def by_isrc(isrc: str):
+    # ...
+
+def
+```
+
+opf-deezer should have a:
+- function isrc_to_opf & names_to_opf
+    - If nothing is found, return False
+
 
 The following repos will be created to support the Open Playlist Format:
 - `osf-to-${service}`: Allow the following actions from a .osf.json
